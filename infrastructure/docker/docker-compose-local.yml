@@ -1,0 +1,27 @@
+version: "3.2"
+services:
+  php-fpm:
+    build:
+      context: ./../../application
+      dockerfile: ./infrastructure/docker/php-fpm/Dockerfile
+    volumes:
+      - type: bind
+        source: ./../../application
+        target: /var/www/html
+  nginx:
+    build:
+      context: ./../../application
+      dockerfile: ./infrastructure/docker/nginx/Dockerfile
+    volumes:
+      - type: bind
+        source: ./../../application
+        target: /var/www/html
+    ports:
+      - "8082:80"
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: lablacodb
+      MYSQL_DATABASE: lablacodev
+    ports:
+      - "3307:3306"

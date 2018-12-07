@@ -1,0 +1,6 @@
+version: '2'
+services:
+  php-fpm:
+    image: "${DOCKER_REGISTRY}/tsi-php-fpm-authentication-service:${RELEASE_VERSION}"
+  nginx:
+    image: "${DOCKER_REGISTRY}/tsi-nginx-authentication-service:${RELEASE_VERSION}"

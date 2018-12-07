@@ -1,0 +1,12 @@
+version: "3.2"
+services:
+  php-fpm:
+    build:
+      context: ./../../application
+      dockerfile: ./infrastructure/docker/php-fpm/Dockerfile
+    image: "${DOCKER_REGISTRY}/lablaco-php-fpm-service:${RELEASE_VERSION}"
+  nginx:
+    build:
+      context: ./../../application
+      dockerfile: ./infrastructure/docker/nginx/Dockerfile
+    image: "${DOCKER_REGISTRY}/lablaco-nginx-service:${RELEASE_VERSION}"

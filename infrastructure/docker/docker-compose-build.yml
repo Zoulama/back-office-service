@@ -1,0 +1,13 @@
+version: "3.2"
+services:
+  composer:
+    build:
+      context: ./../../application
+      dockerfile: ./infrastructure/docker/composer/Dockerfile
+    volumes:
+      - type: bind
+        source: ./../../application
+        target: /var/www/html
+    entrypoint:
+      - composer
+      - install

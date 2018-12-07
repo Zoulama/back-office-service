@@ -1,0 +1,6 @@
+version: "3.2"
+services:
+  tests:
+    build:
+      context: ./../../application
+      dockerfile: ./infrastructure/docker/tests/Dockerfile
