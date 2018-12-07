@@ -1,6 +1,0 @@
----
-
-docker_tls_verify: 1
-docker_host: "tcp://192.168.50.94:2376"
-docker_cert_path: "/var/lib/jenkins/.docker/machine/machines/prd-int-docker01"
-docker_machine_name: "prd-int-docker01"

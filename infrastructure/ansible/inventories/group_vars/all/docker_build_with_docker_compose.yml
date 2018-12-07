@@ -1,3 +1,0 @@
----
-
-docker_build_compose_file: "{{ project_root_path }}/infrastructure/docker/docker-compose-build.yml"
