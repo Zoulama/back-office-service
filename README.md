@@ -1,4 +1,4 @@
-# authentication-service
+# Back-office-service
 
 #### Run composer and run the app containers
 ```
