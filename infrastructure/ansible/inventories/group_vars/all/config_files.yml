@@ -1,7 +1,0 @@
----
-
-generate_config_file: true
-config_files:
-  env:
-    template: "application/.env.j2"
-    dest: "application/.env"

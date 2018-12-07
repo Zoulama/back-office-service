@@ -1,7 +1,0 @@
----
-
-rancher_access_key: "{{ lookup('env','RANCHER_ENV_REC_ACCESS_KEY') }}"
-rancher_secret_key: "{{ lookup('env','RANCHER_ENV_REC_SECRET_KEY') }}"
-
-http_proxy: "{{ lookup('env','REC_HTTP_PROXY') }}"
-https_proxy: "{{ lookup('env','REC_HTTPS_PROXY') }}"
