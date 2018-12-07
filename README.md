@@ -3,7 +3,7 @@
 #### Run composer and run the app containers
 ```
 docker-compose -f infrastructure/docker/docker-compose-build.yml up --build
-docker-compose -f infrastructure/docker/docker-compose-local.yml up -d  --build
+docker-compose -f infrastructure/docker/docker-compose-local.yml up -d --build
 ```
 
 
