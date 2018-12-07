@@ -1,6 +1,0 @@
-version: "2"
-services:
-  php-fpm:
-   scale: 1
-  nginx:
-   scale: 1
